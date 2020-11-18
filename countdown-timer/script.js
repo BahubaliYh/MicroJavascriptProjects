@@ -31,7 +31,7 @@ function countdown ()
   hoursEl.innerHTML = hours;
   minsEl.innerHTML = minutes;
   secondsEl.innerHTML = seconds;
-  if (month === 11 && today === 18) {
+  if (month === 11 && today === 19) {
     document.getElementById("removeAdd").classList.remove("hidden");
   } else {
     document.getElementById("removeAdd").classList.add("hidden");
