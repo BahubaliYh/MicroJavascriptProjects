@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.birthday {
+  background-image: url('./birthday.jpg') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center center;
+}
+
 body {
   background-image: url('./fabian-mardi-kVKz9qnJC-k-unsplash.jpg');
   background-size: cover;
@@ -18,9 +30,20 @@ body {
 }
 
 h1 {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 4rem;
   margin-top: 5rem;
+  color: black !important;
+}
+
+h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 11vw;
+  text-align: center;
+  color: white;
+  letter-spacing: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .big-text {
@@ -43,4 +66,27 @@ h1 {
 
 .countdown-el span {
   font-size: 1.5rem;
+}
+
+
+
+@keyframes leaves {
+  0% {
+    opacity: .1;
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+
+
+
+  100% {
+    opacity: 0.8;
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+
+  }
+}
+
+#treeLeaves {
+  animation: leaves 1s ease-in-out infinite alternate;
 }

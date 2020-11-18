@@ -2,9 +2,16 @@ const daysEl = document.getElementById('days');
 const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('mins');
 const secondsEl = document.getElementById('seconds');
+const currDate = document.getElementById('currentDate');
 
+const newYears = '19 Nov 2020';
 
-const newYears = '23 Nov 2020';
+const datenow = new Date();
+const month = datenow.getMonth() + 1;
+const today = datenow.getDate();
+
+const vid = document.getElementById("myVideo");
+
 
 function countdown ()
 {
@@ -24,6 +31,13 @@ function countdown ()
   hoursEl.innerHTML = hours;
   minsEl.innerHTML = minutes;
   secondsEl.innerHTML = seconds;
+  if (month === 11 && today === 18) {
+    document.getElementById("removeAdd").classList.remove("hidden");
+  } else {
+    document.getElementById("removeAdd").classList.add("hidden");
+    vid.autoplay = false;
+    vid.load();
+  }
 
   console.log(days, hours, minutes, seconds);
 }

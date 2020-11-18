@@ -6,11 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CountDown Timer</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./birthday.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <h1>New Years Eve</h1>
-    <div class="countdown-container">
+    <!-- <h1>New Years Eve</h1> -->
+    <header class="video-header hidden" id="removeAdd">
+      <video src="./animation firework 720 x 1280.mp4" autoplay loop playsinline id="myVideo"></video>
+      <div class="viewport-header">
+        <h3 id="treeLeaves">
+          HAPPY BIRTHDAY BAHUBALI
+        </h3>
+      </div>
+    </header>
+    <div class="countdown-container" id="removeAdd1">
+      <h1>BIRTHDAY COUNTDOWN</h1>
       <div class="countdown-el days-c">
         <p class="big-text" id="days">0</p>
         <span>days</span>
