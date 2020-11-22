@@ -4,17 +4,16 @@ const minsEl = document.getElementById('mins');
 const secondsEl = document.getElementById('seconds');
 const currDate = document.getElementById('currentDate');
 
-const newYears = '19 Nov 2020';
-
-const datenow = new Date();
-const month = datenow.getMonth() + 1;
-const today = datenow.getDate();
+const newYears = '23 Nov 2020';
 
 const vid = document.getElementById("myVideo");
 
 
 function countdown ()
 {
+  const datenow = new Date();
+  const month = datenow.getMonth() + 1;
+  const today = datenow.getDate();
   const newYearsDate = new Date(newYears);
   console.log('new Year Date', newYearsDate);
   const currentDate = new Date();
@@ -31,7 +30,7 @@ function countdown ()
   hoursEl.innerHTML = hours;
   minsEl.innerHTML = minutes;
   secondsEl.innerHTML = seconds;
-  if (month === 11 && today === 19) {
+  if (month === 11 && today === 23) {
     document.getElementById("removeAdd").classList.remove("hidden");
   } else {
     document.getElementById("removeAdd").classList.add("hidden");
